@@ -1,0 +1,15 @@
+# Configuration for Sensor Telemetry Service
+# This file is served by Spring Cloud Config Server
+
+app:
+  name: Sensor Telemetry Service
+  version: 1.0.0
+  
+mongodb:
+  connection:
+    timeout: 5000
+
+# Sensor fetch interval in seconds
+sensor:
+  fetch:
+    interval: 10

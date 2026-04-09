@@ -1,0 +1,20 @@
+# Configuration for Automation Control Service
+# This file is served by Spring Cloud Config Server
+
+app:
+  name: Automation Control Service
+  version: 1.0.0
+
+# Rule engine configuration
+rules:
+  fan:
+    threshold:
+      high: 32
+  heater:
+    threshold:
+      low: 15
+
+# Cache/Redis configuration
+redis:
+  timeout: 3000
+  db: 0

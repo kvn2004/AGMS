@@ -1,0 +1,15 @@
+# Configuration for Zone Service
+# This file is served by Spring Cloud Config Server
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: false
+
+# Default configuration values that can be overridden per environment
+app:
+  name: Zone Management Service
+  version: 1.0.0

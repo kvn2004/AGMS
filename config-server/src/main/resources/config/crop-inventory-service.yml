@@ -1,0 +1,20 @@
+# Configuration for Crop Inventory Service
+# This file is served by Spring Cloud Config Server
+
+app:
+  name: Crop Inventory Service
+  version: 1.0.0
+
+# Crop lifecycle states configuration
+crop:
+  lifecycle:
+    states:
+      - SEEDLING
+      - VEGETATIVE
+      - HARVESTED
+
+# Database configuration
+database:
+  pool:
+    size: 10
+    timeout: 30000

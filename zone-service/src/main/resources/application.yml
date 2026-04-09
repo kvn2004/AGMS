@@ -13,7 +13,7 @@ spring:
     name: zone-service
 
   config:
-    import: optional:configserver:http//localhost:8888
+    import: optional:configserver:http://localhost:8888
 
   datasource:
     driver-class-name: org.postgresql.Driver
